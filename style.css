@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #46d25d;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.whatsapp{
+    background: #46d25d;
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    position: relative;
+    border: 25px solid #fff;
+    box-shadow: -4px 4px 8px #7d7d7d;
+
+}
+
+.triangle{
+    position: relative;
+    bottom: 6em;
+    left: 0.7em;
+    width: 4em;
+    height: 4em;
+    transform: rotate(-20deg)
+    skew(-28deg);
+    background: #46d25d; 
+    border-left: 25px solid #fff;
+    border-bottom: 25px solid #fff;
+    z-index: 5;
+    box-shadow: -6px 6px 5px #9c9c9c;
+
+
+}
+.phone{
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    width: 7em;
+    height: 10em;
+    border: 30px solid#fff;
+    transform: translate(-50% , -50%)
+    rotate(-45deg);
+    border-radius: 50%;
+     translate: -60px -110px ; 
+
+}
+.phone div{
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    width: 7.5em;
+    height: 15em;
+    background: #46d25d;
+    transform: translateY(-50%);
+    border-radius: 0 4em 4em 0;
+    z-index: 1;
+
+}
+.phone:before,
+.phone::after
+{
+    content: '';
+    position: absolute;
+    left: .6em;
+    width: 2.5em;
+    height: 3.5em;
+    background: #fff;
+    z-index: 3;
+
+}
+
+.phone:before{
+    top: 8.06em;
+    border-radius: 5px 5px 10px 50%;
+    transform: rotate(-15deg);
+    
+}
+.phone::after{
+    bottom: 8.06em;
+    border-radius: 50% 10px 5px 5px;
+
+    transform: rotate(15deg);
+}
